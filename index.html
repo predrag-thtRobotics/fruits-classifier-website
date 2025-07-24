@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh/Rotten Classifier</title>
+    <title>The Human Touch Robotics Quality Control</title>
     <style>
         * {
             margin: 0;
@@ -279,7 +279,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🥑 Fresh/Rotten Classifier</h1>
+            <h1>🤖 The Human Touch Robotics Quality Control</h1>
             <p>Upload an image to classify it as fresh or rotten using our AI model</p>
         </div>
 
@@ -423,7 +423,6 @@
 
                 if (result.success) {
                     showResult(result.prediction);
-                    showSuccess(`Image classified successfully! Saved to: ${result.saved_to}`);
                     updateStats();
                 } else {
                     showError(result.error || 'Classification failed');
